@@ -1,0 +1,112 @@
+@import  "../../../tokens.scss";
+
+.root {
+  position: relative;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.root_typePoint {
+  width: 6px;
+  height: 6px;
+}
+
+.root_typeWord {
+  width: 72px;
+  height: 17px;
+}
+.oneWordAssessmentVeryStrong {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-ratings-color-strong;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+  width: 44px;
+  height: 17px;
+}
+
+.oneWordAssessmentModerate {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-ratings-color-moderate;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: wrap;
+  width: 72px;
+  height: 17px;
+}
+
+.oneWordAssessmentPoor {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-ratings-color-needs-help;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: wrap;
+  width: 84px;
+  height: 17px;
+}
+
+.oneWordAssessmentVeryPoor {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-ratings-color-weak;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: wrap;
+  width: 72px;
+  height: 17px;
+}
+
+.keyDot {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+}
+
+.keyDot {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+}
+
+.keyDot {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+}
+
+.keyDot {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+}

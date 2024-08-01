@@ -1,0 +1,173 @@
+@import  "../../../tokens.scss";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.type14 {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-primary;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.breadCrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.type14 {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-link-idle;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.typeArrowBackSizeDefault {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+}
+
+.breadCrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.a1stLevel {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-primary;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.type14 {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-link-idle;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.typeArrowBackSizeDefault {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+}
+
+.breadCrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.a2ndLevel {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-primary;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.type14 {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-link-idle;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.typeArrowBackSizeDefault {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+}
+
+.breadCrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.a3rdLevel {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-primary;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}

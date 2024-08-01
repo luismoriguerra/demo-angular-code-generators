@@ -1,0 +1,48 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_typePoint: type === 'point',
+    root_typeWord: type === 'word'
+  }"
+>
+  <span
+    *ngIf="strength === 'strong' && type === 'word'"
+    class="oneWordAssessmentVeryStrong"
+    >Strong</span
+  >
+  <span
+    *ngIf="strength === 'moderate' && type === 'word'"
+    class="oneWordAssessmentModerate"
+    >Moderate</span
+  >
+  <span
+    *ngIf="strength === 'weak' && type === 'word'"
+    class="oneWordAssessmentPoor"
+    >Weak</span
+  >
+  <span
+    *ngIf="strength === 'very weak' && type === 'word'"
+    class="oneWordAssessmentVeryPoor"
+    >Very Weak</span
+  >
+  <app-key-dot
+    *ngIf="strength === 'strong' && type === 'point'"
+    [color]="'green'"
+    class="keyDot"
+  ></app-key-dot>
+  <app-key-dot
+    *ngIf="strength === 'moderate' && type === 'point'"
+    [color]="'yellow'"
+    class="keyDot"
+  ></app-key-dot>
+  <app-key-dot
+    *ngIf="strength === 'weak' && type === 'point'"
+    [color]="'orange'"
+    class="keyDot"
+  ></app-key-dot>
+  <app-key-dot
+    *ngIf="strength === 'very weak' && type === 'point'"
+    [color]="'red'"
+    class="keyDot"
+  ></app-key-dot>
+</div>

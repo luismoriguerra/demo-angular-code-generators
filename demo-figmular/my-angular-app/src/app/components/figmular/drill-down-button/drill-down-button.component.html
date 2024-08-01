@@ -1,0 +1,74 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_hierarchySpecialStateIdle: hierarchy === 'special' && state === 'idle',
+    root_hierarchyPrimaryStateIdle: hierarchy === 'primary' && state === 'idle',
+    root_hierarchySecondaryStateIdleStateHoverStatePress:
+      hierarchy === 'secondary' &&
+      (state === 'idle' || state === 'hover' || state === 'press'),
+    root_hierarchySpecialStateHover:
+      hierarchy === 'special' && state === 'hover',
+    root_hierarchyPrimaryStateHover:
+      hierarchy === 'primary' && state === 'hover',
+    root_hierarchySpecialStatePress:
+      hierarchy === 'special' && state === 'press',
+    root_hierarchyPrimaryStatePress:
+      hierarchy === 'primary' && state === 'press',
+    root_stateDisabled: state === 'disabled',
+    root_hierarchySecondary: hierarchy === 'secondary',
+    root_hierarchySpecialHierarchyPrimary:
+      hierarchy === 'special' || hierarchy === 'primary'
+  }"
+>
+  <ng-content></ng-content>
+  <div *ngIf="hierarchy === 'special' && state === 'idle'" class="frame1">
+    <span class="button">{{ label }}</span>
+  </div>
+  <ng-content></ng-content>
+  <div
+    *ngIf="hierarchy === 'primary' || hierarchy === 'secondary'"
+    class="frame3"
+  >
+    <span
+      class="button"
+      [ngClass]="{
+        button_hierarchyPrimaryStateIdleStateHoverStatePress:
+          hierarchy === 'primary' &&
+          (state === 'idle' || state === 'hover' || state === 'press'),
+        button_hierarchySecondaryStateIdle:
+          hierarchy === 'secondary' && state === 'idle',
+        button_hierarchySecondaryStateHover:
+          hierarchy === 'secondary' && state === 'hover',
+        button_hierarchySecondaryStatePress:
+          hierarchy === 'secondary' && state === 'press',
+        button_stateDisabledHierarchyPrimaryHierarchySecondary:
+          state === 'disabled' &&
+          (hierarchy === 'primary' || hierarchy === 'secondary')
+      }"
+      >{{ label }}</span
+    >
+  </div>
+  <div
+    *ngIf="
+      hierarchy === 'special' &&
+      (state === 'hover' || state === 'press' || state === 'disabled')
+    "
+    class=""
+    [ngClass]="{
+      frame2_stateHoverStatePressStateDisabled:
+        state === 'hover' || state === 'press' || state === 'disabled'
+    }"
+  >
+    <span
+      *ngIf="state === 'hover' || state === 'press' || state === 'disabled'"
+      class="button"
+      [ngClass]="{
+        button_hierarchySpecialStateHoverStatePress:
+          hierarchy === 'special' && (state === 'hover' || state === 'press'),
+        button_hierarchySpecialStateDisabled:
+          hierarchy === 'special' && state === 'disabled'
+      }"
+      >{{ label }}</span
+    >
+  </div>
+</div>

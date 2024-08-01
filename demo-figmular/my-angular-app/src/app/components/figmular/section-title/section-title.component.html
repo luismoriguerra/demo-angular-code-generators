@@ -1,0 +1,46 @@
+<div class="root">
+  <div *ngIf="type === 'section title'" class="frame889">
+    <div class="frame885">
+      <span class="title">{{ sectionTitle }}</span>
+      <app-assessment
+        [strength]="'strong'"
+        [type]="'point'"
+        class="assessment"
+      ></app-assessment>
+    </div>
+    <span class="descriptiveText">{{ sectionDescriptiveText }}</span>
+  </div>
+  <div *ngIf="type === 'section title'" class="frame888">
+    <ng-content></ng-content>
+    <ng-content></ng-content>
+  </div>
+  <div *ngIf="type === 'subsection title'" class="frame887">
+    <div class="frame886">
+      <span class="title">{{ sectionTitle }}</span>
+      <app-assessment
+        [strength]="'strong'"
+        [type]="'point'"
+        class="assessment"
+      ></app-assessment>
+    </div>
+    <span class="descriptiveText">{{ sectionDescriptiveText }}</span>
+  </div>
+  <div *ngIf="type === 'subsection title'" class="frame892">
+    <ng-content></ng-content>
+  </div>
+  <div *ngIf="type === 'page title'" class="frame891">
+    <div class="frame884">
+      <span class="title">{{ sectionTitle }}</span>
+      <app-assessment
+        [strength]="'strong'"
+        [type]="'word'"
+        class="assessment"
+      ></app-assessment>
+    </div>
+    <span class="descriptiveText">{{ sectionDescriptiveText }}</span>
+  </div>
+  <div *ngIf="type === 'page title'" class="frame890">
+    <ng-content></ng-content>
+    <ng-content></ng-content>
+  </div>
+</div>

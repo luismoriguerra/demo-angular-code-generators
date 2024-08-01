@@ -1,0 +1,131 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_hierarchyLink1HierarchyLink2:
+      hierarchy === 'link 1' || hierarchy === 'link 2',
+    root_hierarchySpecialHierarchyPrimaryHierarchySecondaryHierarchyTertiary:
+      hierarchy === 'special' ||
+      hierarchy === 'primary' ||
+      hierarchy === 'secondary' ||
+      hierarchy === 'tertiary',
+    root_hierarchySpecialStateIdle: hierarchy === 'special' && state === 'idle',
+    root_hierarchyPrimaryStateIdle: hierarchy === 'primary' && state === 'idle',
+    root_hierarchySecondaryStateIdleHierarchyTertiaryStateIdleHierarchySecondaryStateHoverHierarchyTertiaryStateHoverHierarchySecondaryStatePressHierarchyTertiaryStatePress:
+      (hierarchy === 'secondary' && state === 'idle') ||
+      (hierarchy === 'tertiary' && state === 'idle') ||
+      (hierarchy === 'secondary' && state === 'hover') ||
+      (hierarchy === 'tertiary' && state === 'hover') ||
+      (hierarchy === 'secondary' && state === 'press') ||
+      (hierarchy === 'tertiary' && state === 'press'),
+    root_hierarchySpecialStateHover:
+      hierarchy === 'special' && state === 'hover',
+    root_hierarchyPrimaryStateHover:
+      hierarchy === 'primary' && state === 'hover',
+    root_hierarchySpecialStatePress:
+      hierarchy === 'special' && state === 'press',
+    root_hierarchyPrimaryStatePress:
+      hierarchy === 'primary' && state === 'press',
+    root_stateDisabledHierarchySpecialHierarchyPrimaryHierarchySecondaryHierarchyTertiary:
+      state === 'disabled' &&
+      (hierarchy === 'special' ||
+        hierarchy === 'primary' ||
+        hierarchy === 'secondary' ||
+        hierarchy === 'tertiary'),
+    root_hierarchyTertiary: hierarchy === 'tertiary',
+    root_hierarchySpecialHierarchyPrimaryHierarchySecondary:
+      hierarchy === 'special' ||
+      hierarchy === 'primary' ||
+      hierarchy === 'secondary',
+    root_hierarchyTertiaryHierarchyLink1HierarchyLink2:
+      hierarchy === 'tertiary' ||
+      hierarchy === 'link 1' ||
+      hierarchy === 'link 2',
+    root_hierarchySecondary: hierarchy === 'secondary',
+    root_hierarchySpecialHierarchyPrimary:
+      hierarchy === 'special' || hierarchy === 'primary'
+  }"
+>
+  <ng-content></ng-content>
+  <div *ngIf="hierarchy === 'special' && state === 'idle'" class="frame1">
+    <span class="button">{{ label }}</span>
+  </div>
+  <ng-content></ng-content>
+  <div
+    *ngIf="hierarchy === 'primary' || hierarchy === 'secondary'"
+    class="frame3"
+  >
+    <span
+      class="button"
+      [ngClass]="{
+        button_hierarchyPrimaryStateIdleStatePress:
+          hierarchy === 'primary' && (state === 'idle' || state === 'press'),
+        button_hierarchySecondaryStateIdle:
+          hierarchy === 'secondary' && state === 'idle',
+        button_hierarchyPrimaryStateHover:
+          hierarchy === 'primary' && state === 'hover',
+        button_hierarchySecondaryStateHover:
+          hierarchy === 'secondary' && state === 'hover',
+        button_hierarchySecondaryStatePress:
+          hierarchy === 'secondary' && state === 'press',
+        button_stateDisabledHierarchyPrimaryHierarchySecondary:
+          state === 'disabled' &&
+          (hierarchy === 'primary' || hierarchy === 'secondary')
+      }"
+      >{{ label }}</span
+    >
+  </div>
+  <span
+    *ngIf="hierarchy === 'tertiary'"
+    class="button"
+    [ngClass]="{
+      button_hierarchyTertiaryStateIdle:
+        hierarchy === 'tertiary' && state === 'idle',
+      button_hierarchyTertiaryStateHover:
+        hierarchy === 'tertiary' && state === 'hover',
+      button_hierarchyTertiaryStatePress:
+        hierarchy === 'tertiary' && state === 'press',
+      button_hierarchyTertiaryStateDisabled:
+        hierarchy === 'tertiary' && state === 'disabled'
+    }"
+    >{{ label }}</span
+  >
+  <span
+    *ngIf="hierarchy === 'link 1' || hierarchy === 'link 2'"
+    class="type14"
+    [ngClass]="{
+      type14_stateIdleHierarchyLink1HierarchyLink2:
+        state === 'idle' && (hierarchy === 'link 1' || hierarchy === 'link 2'),
+      type14_stateHoverHierarchyLink1HierarchyLink2:
+        state === 'hover' && (hierarchy === 'link 1' || hierarchy === 'link 2'),
+      type14_statePressHierarchyLink1HierarchyLink2:
+        state === 'press' && (hierarchy === 'link 1' || hierarchy === 'link 2'),
+      type14_stateDisabledHierarchyLink1HierarchyLink2:
+        state === 'disabled' &&
+        (hierarchy === 'link 1' || hierarchy === 'link 2')
+    }"
+    >{{ label }}</span
+  >
+  <div
+    *ngIf="
+      hierarchy === 'special' &&
+      (state === 'hover' || state === 'press' || state === 'disabled')
+    "
+    class=""
+    [ngClass]="{
+      frame2_stateHoverStatePressStateDisabled:
+        state === 'hover' || state === 'press' || state === 'disabled'
+    }"
+  >
+    <span
+      *ngIf="state === 'hover' || state === 'press' || state === 'disabled'"
+      class="button"
+      [ngClass]="{
+        button_hierarchySpecialStateHoverStatePress:
+          hierarchy === 'special' && (state === 'hover' || state === 'press'),
+        button_hierarchySpecialStateDisabled:
+          hierarchy === 'special' && state === 'disabled'
+      }"
+      >{{ label }}</span
+    >
+  </div>
+</div>

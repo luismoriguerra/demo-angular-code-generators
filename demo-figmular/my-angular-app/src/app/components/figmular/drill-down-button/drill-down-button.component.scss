@@ -1,0 +1,172 @@
+@import  "../../../tokens.scss";
+
+.root {
+  padding-right: 28px;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  border-radius: $global-tokens-light-mode-dimensions-corner-drill-down-button
+    $global-tokens-light-mode-dimensions-corner-flush
+    $global-tokens-light-mode-dimensions-corner-frame-default
+    $global-tokens-light-mode-dimensions-corner-flush;
+}
+
+.root_hierarchySpecialStateIdle {
+  background: $global-tokens-light-mode-buttons-button-highlight-idle;
+}
+
+.root_hierarchyPrimaryStateIdle {
+  background: $global-tokens-light-mode-buttons-button-primary-idle;
+}
+
+.root_hierarchySecondaryStateIdleStateHoverStatePress {
+  background: $global-tokens-light-mode-buttons-button-secondary;
+}
+
+.root_hierarchySpecialStateHover {
+  background: $global-tokens-light-mode-buttons-button-highlight-hover;
+}
+
+.root_hierarchyPrimaryStateHover {
+  background: $global-tokens-light-mode-buttons-button-primary-hover;
+}
+
+.root_hierarchySpecialStatePress {
+  background: $global-tokens-light-mode-buttons-button-highlight-press;
+}
+
+.root_hierarchyPrimaryStatePress {
+  background: $global-tokens-light-mode-buttons-button-primary-press;
+}
+
+.root_stateDisabled {
+  background: $global-tokens-light-mode-buttons-button-disabled;
+}
+
+.root_hierarchySecondary {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.root_hierarchySpecialHierarchyPrimary {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.report {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+}
+
+.frame1 {
+  padding: 0px 4px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-buttons-button-primary-content;
+  font-size: 14px;
+  font-family: Open Sans;
+  line-height: 120.00000476837158%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.arrowRightDefault {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+}
+
+.frame3 {
+  padding: 0px 4px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  box-sizing: content-box;
+  font-size: 14px;
+  font-family: Open Sans;
+  line-height: 120.00000476837158%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.button_hierarchyPrimaryStateIdleStateHoverStatePress {
+  color: $global-tokens-light-mode-buttons-button-primary-content;
+}
+
+.button_hierarchySecondaryStateIdle {
+  color: $global-tokens-light-mode-global-text-link-idle;
+}
+
+.button_hierarchySecondaryStateHover {
+  color: $global-tokens-light-mode-global-text-link-hover;
+}
+
+.button_hierarchySecondaryStatePress {
+  color: $global-tokens-light-mode-global-text-link-press;
+}
+
+.button_stateDisabledHierarchyPrimaryHierarchySecondary {
+  color: $global-tokens-light-mode-selectables-selectables-content-disabled;
+}
+
+.frame2_stateHoverStatePressStateDisabled {
+  padding: 0px 4px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  box-sizing: content-box;
+  font-size: 14px;
+  font-family: Open Sans;
+  line-height: 120.00000476837158%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.button_hierarchySpecialStateHoverStatePress {
+  color: $global-tokens-light-mode-buttons-button-primary-content;
+}
+
+.button_hierarchySpecialStateDisabled {
+  color: $global-tokens-light-mode-selectables-selectables-content-disabled;
+}

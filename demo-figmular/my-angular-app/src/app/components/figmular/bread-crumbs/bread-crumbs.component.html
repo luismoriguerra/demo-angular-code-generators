@@ -1,0 +1,62 @@
+<div class="root">
+  <div *ngIf="property1 === 'Top Page'" class="button">
+    <span class="type14">{{ label }}</span>
+  </div>
+  <div
+    *ngIf="
+      property1 === '1 Level' ||
+      property1 === '2 Levels' ||
+      property1 === '3 Levels'
+    "
+    class="breadCrumb"
+  >
+    <div class="button">
+      <span class="type14">{{ label }}</span>
+    </div>
+    <!-- <app-type-arrow-back-size-default
+      [type]="'Chevron Right'"
+      [size]="'Default'"
+      class="typeArrowBackSizeDefault"
+    ></app-type-arrow-back-size-default> -->
+  </div>
+  <div
+    *ngIf="
+      property1 === '1 Level' ||
+      property1 === '2 Levels' ||
+      property1 === '3 Levels'
+    "
+    class="breadCrumb"
+  >
+    <span *ngIf="property1 === '1 Level'" class="a1stLevel">1st Level</span>
+    <div
+      *ngIf="property1 === '2 Levels' || property1 === '3 Levels'"
+      class="button"
+    >
+      <span class="type14">{{ label }}</span>
+    </div>
+    <!-- <app-type-arrow-back-size-default
+      *ngIf="property1 === '2 Levels' || property1 === '3 Levels'"
+      [type]="'Chevron Right'"
+      [size]="'Default'"
+      class="typeArrowBackSizeDefault"
+    ></app-type-arrow-back-size-default> -->
+  </div>
+  <div
+    *ngIf="property1 === '2 Levels' || property1 === '3 Levels'"
+    class="breadCrumb"
+  >
+    <span *ngIf="property1 === '2 Levels'" class="a2ndLevel">2nd Level</span>
+    <div *ngIf="property1 === '3 Levels'" class="button">
+      <span class="type14">{{ label }}</span>
+    </div>
+    <!-- <app-type-arrow-back-size-default
+      *ngIf="property1 === '3 Levels'"
+      [type]="'Chevron Right'"
+      [size]="'Default'"
+      class="typeArrowBackSizeDefault"
+    ></app-type-arrow-back-size-default> -->
+  </div>
+  <div *ngIf="property1 === '3 Levels'" class="breadCrumb">
+    <span class="a3rdLevel">3rd Level</span>
+  </div>
+</div>

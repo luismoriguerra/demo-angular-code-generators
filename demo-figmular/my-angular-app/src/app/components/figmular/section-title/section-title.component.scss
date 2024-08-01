@@ -1,0 +1,210 @@
+@import  "../../../tokens.scss";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 2px;
+  box-sizing: border-box;
+}
+.frame889 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: $primitives-dimensions-dim-2;
+  box-sizing: border-box;
+  width: -webkit-fill-available;
+}
+.frame885 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
+}
+.title {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-primary;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.assessment {
+  position: relative;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+}
+
+.descriptiveText {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-secondary;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: wrap;
+  width: -webkit-fill-available;
+}
+
+.frame888 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: $primitives-dimensions-dim-8;
+  box-sizing: border-box;
+}
+.github {
+  position: relative;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+}
+
+.download {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}
+
+.frame887 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: $primitives-dimensions-dim-2;
+  box-sizing: border-box;
+  width: -webkit-fill-available;
+}
+.frame886 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: $primitives-dimensions-dim-4;
+  box-sizing: border-box;
+}
+.title {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-primary;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.assessment {
+  position: relative;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+}
+
+.descriptiveText {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-secondary;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: wrap;
+  width: -webkit-fill-available;
+}
+
+.frame892 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.download {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}
+
+.frame891 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: $primitives-dimensions-dim-2;
+  box-sizing: border-box;
+  width: -webkit-fill-available;
+}
+.frame884 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 6px;
+  box-sizing: border-box;
+}
+.title {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-primary;
+  font-weight: 700;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.assessment {
+  position: relative;
+  box-sizing: border-box;
+  width: 72px;
+  height: 17px;
+}
+
+.descriptiveText {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-text-secondary;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: wrap;
+  width: -webkit-fill-available;
+}
+
+.frame890 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: $primitives-dimensions-dim-8;
+  box-sizing: border-box;
+}
+.github {
+  position: relative;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+}
+
+.link {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}

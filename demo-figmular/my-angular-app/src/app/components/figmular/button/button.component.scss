@@ -1,0 +1,253 @@
+@import  "../../../tokens.scss";
+
+.root_hierarchyLink1HierarchyLink2 {
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 4px;
+}
+
+.root_hierarchySpecialHierarchyPrimaryHierarchySecondaryHierarchyTertiary {
+  border-radius: $global-tokens-light-mode-dimensions-corner-frame-default;
+}
+
+.root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+}
+
+.root_hierarchySpecialStateIdle {
+  background: $global-tokens-light-mode-buttons-button-highlight-idle;
+}
+
+.root_hierarchyPrimaryStateIdle {
+  background: $global-tokens-light-mode-buttons-button-primary-idle;
+}
+
+.root_hierarchySecondaryStateIdleHierarchyTertiaryStateIdleHierarchySecondaryStateHoverHierarchyTertiaryStateHoverHierarchySecondaryStatePressHierarchyTertiaryStatePress {
+  background: $global-tokens-light-mode-buttons-button-secondary;
+}
+
+.root_hierarchySpecialStateHover {
+  background: $global-tokens-light-mode-buttons-button-highlight-hover;
+}
+
+.root_hierarchyPrimaryStateHover {
+  background: $global-tokens-light-mode-buttons-button-primary-hover;
+}
+
+.root_hierarchySpecialStatePress {
+  background: $global-tokens-light-mode-buttons-button-highlight-press;
+}
+
+.root_hierarchyPrimaryStatePress {
+  background: $global-tokens-light-mode-buttons-button-primary-press;
+}
+
+.root_stateDisabledHierarchySpecialHierarchyPrimaryHierarchySecondaryHierarchyTertiary {
+  background: $global-tokens-light-mode-buttons-button-disabled;
+}
+
+.root_hierarchyTertiary {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.root_hierarchySpecialHierarchyPrimaryHierarchySecondary {
+  padding-right: 28px;
+  padding-left: 28px;
+  justify-content: flex-end;
+}
+
+.root_hierarchyTertiaryHierarchyLink1HierarchyLink2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+
+.root_hierarchySecondary {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.root_hierarchySpecialHierarchyPrimary {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.report {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+}
+
+.frame1 {
+  padding: 0px 4px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  box-sizing: content-box;
+  color: $global-tokens-light-mode-global-background-primary;
+  font-size: 14px;
+  font-family: Open Sans;
+  line-height: 120.00000476837158%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.arrowRightDefault {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+}
+
+.frame3 {
+  padding: 0px 4px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  box-sizing: content-box;
+  font-size: 14px;
+  font-family: Open Sans;
+  line-height: 120.00000476837158%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.button_hierarchyPrimaryStateIdleStatePress {
+  color: $global-tokens-light-mode-global-background-primary;
+}
+
+.button_hierarchySecondaryStateIdle {
+  color: $global-tokens-light-mode-global-text-link-idle;
+}
+
+.button_hierarchyPrimaryStateHover {
+  color: $global-tokens-light-mode-buttons-button-primary-content;
+}
+
+.button_hierarchySecondaryStateHover {
+  color: $global-tokens-light-mode-global-text-link-hover;
+}
+
+.button_hierarchySecondaryStatePress {
+  color: $global-tokens-light-mode-global-text-link-press;
+}
+
+.button_stateDisabledHierarchyPrimaryHierarchySecondary {
+  color: $global-tokens-light-mode-selectables-selectables-content-disabled;
+}
+
+.button {
+  display: flex;
+  box-sizing: content-box;
+  font-size: 14px;
+  font-family: Open Sans;
+  line-height: 120.00000476837158%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.button_hierarchyTertiaryStateIdle {
+  color: $global-tokens-light-mode-global-text-link-idle;
+}
+
+.button_hierarchyTertiaryStateHover {
+  color: $global-tokens-light-mode-global-text-link-hover;
+}
+
+.button_hierarchyTertiaryStatePress {
+  color: $global-tokens-light-mode-global-text-link-press;
+}
+
+.button_hierarchyTertiaryStateDisabled {
+  color: $global-tokens-light-mode-selectables-selectables-content-disabled;
+}
+
+.type14 {
+  display: flex;
+  box-sizing: content-box;
+  font-family: Open Sans;
+  line-height: 120.00000476837158%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.type14_stateIdleHierarchyLink1HierarchyLink2 {
+  color: $global-tokens-light-mode-global-text-link-idle;
+}
+
+.type14_stateHoverHierarchyLink1HierarchyLink2 {
+  color: $global-tokens-light-mode-global-text-link-hover;
+}
+
+.type14_statePressHierarchyLink1HierarchyLink2 {
+  color: $global-tokens-light-mode-global-text-link-press;
+}
+
+.type14_stateDisabledHierarchyLink1HierarchyLink2 {
+  color: $global-tokens-light-mode-selectables-selectables-content-disabled;
+}
+
+.frame2_stateHoverStatePressStateDisabled {
+  padding: 0px 4px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  box-sizing: content-box;
+  font-size: 14px;
+  font-family: Open Sans;
+  line-height: 120.00000476837158%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.button_hierarchySpecialStateHoverStatePress {
+  color: $global-tokens-light-mode-global-background-primary;
+}
+
+.button_hierarchySpecialStateDisabled {
+  color: $global-tokens-light-mode-selectables-selectables-content-disabled;
+}
